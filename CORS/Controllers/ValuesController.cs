@@ -14,10 +14,10 @@ namespace CORS.Controllers
 
         // GET api/values/another
         [HttpGet]
-        [EnableCors(origins:"bigfont.ca", headers:"*", methods: "*")]
+        [EnableCors(origins:"http://www.bigfont.ca", headers:"*", methods: "*")]
         public IEnumerable<string> Another()
         {
-            return new string[] { "This is a CORS request.", "That works from any origin." };
+            return new string[] { "This is a CORS request.", "It works only from www.bigfont.ca." };
         }
     }
 }

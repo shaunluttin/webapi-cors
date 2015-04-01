@@ -11,4 +11,5 @@ c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\bin\System
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\bin\System.Web.Http.WebHost.xml
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\obj\Debug\CORS.dll
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\obj\Debug\CORS.pdb
-C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\CORS\CORS\obj\Debug\CORS.csprojResolveAssemblyReference.cache
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\CORS\CORS\bin\Newtonsoft.Json.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\CORS\CORS\bin\Newtonsoft.Json.xml

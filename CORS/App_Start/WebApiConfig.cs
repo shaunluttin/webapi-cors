@@ -11,7 +11,11 @@ namespace CORS
         public static void Register(HttpConfiguration config)
         {
             EnableCrossSiteRequests(config);
+            AddRoutes(config);
+        }
 
+        private static void AddRoutes(HttpConfiguration config)
+        {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
@@ -21,11 +25,7 @@ namespace CORS
 
         private static void EnableCrossSiteRequests(HttpConfiguration config)
         {
-#if DEBUG
             var cors = new EnableCorsAttribute(origins: "*", headers: "*", methods: "*");
-#else
-            var cors = new EnableCorsAttribute("http://attendance1.azurewebsites.net", headers: "*", methods: "*");
-#endif
             config.EnableCors(cors);
         }
     }

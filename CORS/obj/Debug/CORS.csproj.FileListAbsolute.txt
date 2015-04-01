@@ -70,3 +70,4 @@ c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\bin\zh-Han
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\bin\zh-Hant\System.Spatial.resources.dll
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\obj\Debug\CORS.dll
 c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\obj\Debug\CORS.pdb
+c:\Users\shaun.luttin\documents\visual studio 2012\Projects\CORS\CORS\obj\Debug\CORS.csprojResolveAssemblyReference.cache

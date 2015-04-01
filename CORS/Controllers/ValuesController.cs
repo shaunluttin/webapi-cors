@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace CORS.Controllers
 {
@@ -7,6 +8,14 @@ namespace CORS.Controllers
     {
         // GET api/values
         public IEnumerable<string> Get()
+        {
+            return new string[] { "This is a CORS request.", "That works from any origin." };
+        }
+
+        // GET api/values/another
+        [HttpGet]
+        [EnableCors(origins:"bigfont.ca", headers:"*", methods: "*")]
+        public IEnumerable<string> Another()
         {
             return new string[] { "This is a CORS request.", "That works from any origin." };
         }

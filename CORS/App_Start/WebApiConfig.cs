@@ -15,7 +15,8 @@ namespace CORS
         {
             config.Routes.MapHttpRoute(
                 name: "Default",
-                routeTemplate: "api/{controller}/"
+                routeTemplate: "api/{controller}/{action}",
+                defaults: new { controller = "", action = "Get" }
             );
         }
 
@@ -25,6 +26,7 @@ namespace CORS
                 origins: "*", 
                 headers: "*", 
                 methods: "*");
+
             config.EnableCors(cors);
         }
     }

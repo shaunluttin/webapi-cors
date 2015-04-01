@@ -5,7 +5,8 @@ A demo site for ASP.NET Web API CORS
 * Here is a demo fiddle: http://jsfiddle.net/shaunluttin/Lbfk2ggu/
 
 `
-$.get( "http://cors-webapi.azurewebsites.net/api/values", function( data ) {
+var url = "http://cors-webapi.azurewebsites.net/api/values";
+$.get(url, function( data ) {
   $( ".result" ).html( data );
 });
 `

@@ -29,7 +29,8 @@ namespace CORS.Controllers
         {
             // All the values in "query" are null or zero
             // Do some stuff with query if there were anything to do
-            return new string[] { "This is a CORS request.", "That works from any origin." };
+            
+            return Ok();
         }        
     }
 }

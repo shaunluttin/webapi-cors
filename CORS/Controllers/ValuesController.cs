@@ -35,7 +35,7 @@ namespace CORS.Controllers
             }
             else
             {
-                return Ok("Add a username!")
+                return Ok("Add a username!");
             }
         }        
     }

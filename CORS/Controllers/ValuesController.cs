@@ -29,8 +29,14 @@ namespace CORS.Controllers
         {
             // All the values in "query" are null or zero
             // Do some stuff with query if there were anything to do
-            
-            return Ok("Hello world.");
+            if(query != null)
+            {
+                return Ok(query.username);
+            }
+            else
+            {
+                return Ok("Add a username!")
+            }
         }        
     }
 }

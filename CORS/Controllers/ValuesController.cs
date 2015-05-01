@@ -20,6 +20,11 @@ namespace CORS.Controllers
             return new string[] { "This is a CORS request.", "It works only from www.bigfont.ca." };
         }
         
+        public class EstimateQuery
+        {
+            public string username { get; set; }
+        }
+        
         public IHttpActionResult GetTitleEstimate([FromUri] EstimateQuery query)
         {
             // All the values in "query" are null or zero

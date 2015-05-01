@@ -30,7 +30,7 @@ namespace CORS.Controllers
             // All the values in "query" are null or zero
             // Do some stuff with query if there were anything to do
             
-            return Ok();
+            return Ok("Hello world.");
         }        
     }
 }

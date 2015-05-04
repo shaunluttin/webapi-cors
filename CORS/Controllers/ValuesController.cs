@@ -9,7 +9,11 @@ namespace CORS.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "This is a CORS request.", "That works from any origin." };
+            return new string[] { 
+                "This is a CORS response.", 
+                "It works from any origin." 
+            };
+            
         }
 
         // GET api/values/another
@@ -17,7 +21,11 @@ namespace CORS.Controllers
         [EnableCors(origins:"http://www.bigfont.ca", headers:"*", methods: "*")]
         public IEnumerable<string> Another()
         {
-            return new string[] { "This is a CORS request.", "It works only from www.bigfont.ca." };
+            return new string[] { 
+                "This is a CORS response.", 
+                "It works only from www.bigfont.ca AND from the same origin." 
+            };
+            
         }
     }
 }
